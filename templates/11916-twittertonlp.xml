@@ -1,0 +1,660 @@
+<?xml version="1.0" ?>
+<template encoding-version="1.0">
+  <description>NLP</description>
+  <groupId>ede51416-0159-1000-0000-0000580b3fdb</groupId>
+  <name>TwitterToNLP</name>
+  <snippet>
+    <connections>
+      <id>cc423f4d-e535-12af-0000-000000000000</id>
+      <parentGroupId>ede51416-0159-1000-0000-000000000000</parentGroupId>
+      <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+      <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+      <destination>
+        <groupId>ede51416-0159-1000-0000-000000000000</groupId>
+        <id>419e3346-8b10-1957-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </destination>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+      <labelIndex>1</labelIndex>
+      <name></name>
+      <selectedRelationships>success</selectedRelationships>
+      <source>
+        <groupId>ede51416-0159-1000-0000-000000000000</groupId>
+        <id>6b3e3776-d156-19d0-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </source>
+      <zIndex>0</zIndex>
+    </connections>
+    <connections>
+      <id>ede5d68f-0159-1000-0000-000000000000</id>
+      <parentGroupId>ede51416-0159-1000-0000-000000000000</parentGroupId>
+      <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+      <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+      <destination>
+        <groupId>ede51416-0159-1000-0000-000000000000</groupId>
+        <id>589f326f-69fb-17eb-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </destination>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+      <labelIndex>1</labelIndex>
+      <name></name>
+      <selectedRelationships>failure</selectedRelationships>
+      <selectedRelationships>success</selectedRelationships>
+      <source>
+        <groupId>ede51416-0159-1000-0000-000000000000</groupId>
+        <id>ede54909-0159-1000-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </source>
+      <zIndex>0</zIndex>
+    </connections>
+    <connections>
+      <id>f169de9e-0159-1000-0000-000000000000</id>
+      <parentGroupId>ede51416-0159-1000-0000-000000000000</parentGroupId>
+      <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+      <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+      <destination>
+        <groupId>ede51416-0159-1000-0000-000000000000</groupId>
+        <id>ede54909-0159-1000-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </destination>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+      <labelIndex>1</labelIndex>
+      <name></name>
+      <selectedRelationships>matched</selectedRelationships>
+      <source>
+        <groupId>ede51416-0159-1000-0000-000000000000</groupId>
+        <id>419e3346-8b10-1957-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </source>
+      <zIndex>0</zIndex>
+    </connections>
+    <processors>
+      <id>ede54909-0159-1000-0000-000000000000</id>
+      <parentGroupId>ede51416-0159-1000-0000-000000000000</parentGroupId>
+      <position>
+        <x>15.0</x>
+        <y>536.0</y>
+      </position>
+      <config>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+          <entry>
+            <key>sentence</key>
+            <value>
+              <name>sentence</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Extra Resources</key>
+            <value>
+              <name>Extra Resources</name>
+            </value>
+          </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+          <entry>
+            <key>sentence</key>
+            <value>${msg}</value>
+          </entry>
+          <entry>
+            <key>Extra Resources</key>
+            <value>/usr/hdf/current/nifi/lib</value>
+          </entry>
+        </properties>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+      </config>
+      <name>NLPProcessor</name>
+      <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>failure</name>
+      </relationships>
+      <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>success</name>
+      </relationships>
+      <style></style>
+      <type>com.dataflowdeveloper.processors.process.NLPProcessor</type>
+    </processors>
+    <processors>
+      <id>419e3346-8b10-1957-0000-000000000000</id>
+      <parentGroupId>ede51416-0159-1000-0000-000000000000</parentGroupId>
+      <position>
+        <x>6.4575746162011</x>
+        <y>228.5571697196856</y>
+      </position>
+      <config>
+        <bulletinLevel>ERROR</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>4</concurrentlySchedulableTaskCount>
+        <descriptors>
+          <entry>
+            <key>Destination</key>
+            <value>
+              <name>Destination</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Return Type</key>
+            <value>
+              <name>Return Type</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Path Not Found Behavior</key>
+            <value>
+              <name>Path Not Found Behavior</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Null Value Representation</key>
+            <value>
+              <name>Null Value Representation</name>
+            </value>
+          </entry>
+          <entry>
+            <key>coordinates</key>
+            <value>
+              <name>coordinates</name>
+            </value>
+          </entry>
+          <entry>
+            <key>followers_count</key>
+            <value>
+              <name>followers_count</name>
+            </value>
+          </entry>
+          <entry>
+            <key>friends_count</key>
+            <value>
+              <name>friends_count</name>
+            </value>
+          </entry>
+          <entry>
+            <key>geo</key>
+            <value>
+              <name>geo</name>
+            </value>
+          </entry>
+          <entry>
+            <key>handle</key>
+            <value>
+              <name>handle</name>
+            </value>
+          </entry>
+          <entry>
+            <key>hashtags</key>
+            <value>
+              <name>hashtags</name>
+            </value>
+          </entry>
+          <entry>
+            <key>language</key>
+            <value>
+              <name>language</name>
+            </value>
+          </entry>
+          <entry>
+            <key>location</key>
+            <value>
+              <name>location</name>
+            </value>
+          </entry>
+          <entry>
+            <key>media_url</key>
+            <value>
+              <name>media_url</name>
+            </value>
+          </entry>
+          <entry>
+            <key>msg</key>
+            <value>
+              <name>msg</name>
+            </value>
+          </entry>
+          <entry>
+            <key>place</key>
+            <value>
+              <name>place</name>
+            </value>
+          </entry>
+          <entry>
+            <key>profile_image_url</key>
+            <value>
+              <name>profile_image_url</name>
+            </value>
+          </entry>
+          <entry>
+            <key>retweet_count</key>
+            <value>
+              <name>retweet_count</name>
+            </value>
+          </entry>
+          <entry>
+            <key>time</key>
+            <value>
+              <name>time</name>
+            </value>
+          </entry>
+          <entry>
+            <key>tweet_id</key>
+            <value>
+              <name>tweet_id</name>
+            </value>
+          </entry>
+          <entry>
+            <key>unixtime</key>
+            <value>
+              <name>unixtime</name>
+            </value>
+          </entry>
+          <entry>
+            <key>user_name</key>
+            <value>
+              <name>user_name</name>
+            </value>
+          </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+          <entry>
+            <key>Destination</key>
+            <value>flowfile-attribute</value>
+          </entry>
+          <entry>
+            <key>Return Type</key>
+            <value>auto-detect</value>
+          </entry>
+          <entry>
+            <key>Path Not Found Behavior</key>
+            <value>ignore</value>
+          </entry>
+          <entry>
+            <key>Null Value Representation</key>
+            <value>empty string</value>
+          </entry>
+          <entry>
+            <key>coordinates</key>
+            <value>$.coordinates</value>
+          </entry>
+          <entry>
+            <key>followers_count</key>
+            <value>$.user.followers_count</value>
+          </entry>
+          <entry>
+            <key>friends_count</key>
+            <value>$.user.friends_count</value>
+          </entry>
+          <entry>
+            <key>geo</key>
+            <value>$.geo</value>
+          </entry>
+          <entry>
+            <key>handle</key>
+            <value>$.user.screen_name</value>
+          </entry>
+          <entry>
+            <key>hashtags</key>
+            <value>$.entities.hashtags[0].text</value>
+          </entry>
+          <entry>
+            <key>language</key>
+            <value>$.lang</value>
+          </entry>
+          <entry>
+            <key>location</key>
+            <value>$.user.location</value>
+          </entry>
+          <entry>
+            <key>media_url</key>
+            <value>$.entities.media[0].media_url</value>
+          </entry>
+          <entry>
+            <key>msg</key>
+            <value>$.text</value>
+          </entry>
+          <entry>
+            <key>place</key>
+            <value>$.place.full_name</value>
+          </entry>
+          <entry>
+            <key>profile_image_url</key>
+            <value>$.user.profile_image_url</value>
+          </entry>
+          <entry>
+            <key>retweet_count</key>
+            <value>$.retweet_count</value>
+          </entry>
+          <entry>
+            <key>time</key>
+            <value>$.created_at</value>
+          </entry>
+          <entry>
+            <key>tweet_id</key>
+            <value>$.id</value>
+          </entry>
+          <entry>
+            <key>unixtime</key>
+            <value>$.timestamp_ms</value>
+          </entry>
+          <entry>
+            <key>user_name</key>
+            <value>$.user.name</value>
+          </entry>
+        </properties>
+        <runDurationMillis>25</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+      </config>
+      <name>Pull Key Attributes</name>
+      <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+      </relationships>
+      <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>matched</name>
+      </relationships>
+      <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>unmatched</name>
+      </relationships>
+      <style></style>
+      <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
+    </processors>
+    <processors>
+      <id>589f326f-69fb-17eb-0000-000000000000</id>
+      <parentGroupId>ede51416-0159-1000-0000-000000000000</parentGroupId>
+      <position>
+        <x>17.070248498176852</x>
+        <y>783.6536688811823</y>
+      </position>
+      <config>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+          <entry>
+            <key>Hadoop Configuration Resources</key>
+            <value>
+              <name>Hadoop Configuration Resources</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Kerberos Principal</key>
+            <value>
+              <name>Kerberos Principal</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Kerberos Keytab</key>
+            <value>
+              <name>Kerberos Keytab</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Kerberos Relogin Period</key>
+            <value>
+              <name>Kerberos Relogin Period</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Additional Classpath Resources</key>
+            <value>
+              <name>Additional Classpath Resources</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Directory</key>
+            <value>
+              <name>Directory</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Conflict Resolution Strategy</key>
+            <value>
+              <name>Conflict Resolution Strategy</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Block Size</key>
+            <value>
+              <name>Block Size</name>
+            </value>
+          </entry>
+          <entry>
+            <key>IO Buffer Size</key>
+            <value>
+              <name>IO Buffer Size</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Replication</key>
+            <value>
+              <name>Replication</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Permissions umask</key>
+            <value>
+              <name>Permissions umask</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Remote Owner</key>
+            <value>
+              <name>Remote Owner</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Remote Group</key>
+            <value>
+              <name>Remote Group</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Compression codec</key>
+            <value>
+              <name>Compression codec</name>
+            </value>
+          </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+          <entry>
+            <key>Hadoop Configuration Resources</key>
+            <value>/etc/hadoop/conf/core-site.xml</value>
+          </entry>
+          <entry>
+            <key>Kerberos Principal</key>
+          </entry>
+          <entry>
+            <key>Kerberos Keytab</key>
+          </entry>
+          <entry>
+            <key>Kerberos Relogin Period</key>
+            <value>4 hours</value>
+          </entry>
+          <entry>
+            <key>Additional Classpath Resources</key>
+          </entry>
+          <entry>
+            <key>Directory</key>
+            <value>/osquery</value>
+          </entry>
+          <entry>
+            <key>Conflict Resolution Strategy</key>
+            <value>replace</value>
+          </entry>
+          <entry>
+            <key>Block Size</key>
+          </entry>
+          <entry>
+            <key>IO Buffer Size</key>
+          </entry>
+          <entry>
+            <key>Replication</key>
+          </entry>
+          <entry>
+            <key>Permissions umask</key>
+          </entry>
+          <entry>
+            <key>Remote Owner</key>
+          </entry>
+          <entry>
+            <key>Remote Group</key>
+          </entry>
+          <entry>
+            <key>Compression codec</key>
+            <value>NONE</value>
+          </entry>
+        </properties>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+      </config>
+      <name>Save NLP to HDFS</name>
+      <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+      </relationships>
+      <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>success</name>
+      </relationships>
+      <style></style>
+      <type>org.apache.nifi.processors.hadoop.PutHDFS</type>
+    </processors>
+    <processors>
+      <id>6b3e3776-d156-19d0-0000-000000000000</id>
+      <parentGroupId>ede51416-0159-1000-0000-000000000000</parentGroupId>
+      <position>
+        <x>0.0</x>
+        <y>0.0</y>
+      </position>
+      <config>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+          <entry>
+            <key>Twitter Endpoint</key>
+            <value>
+              <name>Twitter Endpoint</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Consumer Key</key>
+            <value>
+              <name>Consumer Key</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Consumer Secret</key>
+            <value>
+              <name>Consumer Secret</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Access Token</key>
+            <value>
+              <name>Access Token</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Access Token Secret</key>
+            <value>
+              <name>Access Token Secret</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Languages</key>
+            <value>
+              <name>Languages</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Terms to Filter On</key>
+            <value>
+              <name>Terms to Filter On</name>
+            </value>
+          </entry>
+          <entry>
+            <key>IDs to Follow</key>
+            <value>
+              <name>IDs to Follow</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Locations to Filter On</key>
+            <value>
+              <name>Locations to Filter On</name>
+            </value>
+          </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+          <entry>
+            <key>Twitter Endpoint</key>
+            <value>Filter Endpoint</value>
+          </entry>
+          <entry>
+            <key>Consumer Key</key>
+            <value>WZrDIo7F36WDgIt5ZfSzqd5zR</value>
+          </entry>
+          <entry>
+            <key>Consumer Secret</key>
+          </entry>
+          <entry>
+            <key>Access Token</key>
+            <value>1006391-c02PDJnzsQOqUnRZboUUHByLQMXtjG2F4706tT49Qt</value>
+          </entry>
+          <entry>
+            <key>Access Token Secret</key>
+          </entry>
+          <entry>
+            <key>Languages</key>
+            <value>en</value>
+          </entry>
+          <entry>
+            <key>Terms to Filter On</key>
+            <value>NIFI,APACHENIFI, Apache NiFi, HDF, Hortonworks</value>
+          </entry>
+          <entry>
+            <key>IDs to Follow</key>
+          </entry>
+          <entry>
+            <key>Locations to Filter On</key>
+          </entry>
+        </properties>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+      </config>
+      <name>All The Tweets</name>
+      <relationships>
+        <autoTerminate>false</autoTerminate>
+        <name>success</name>
+      </relationships>
+      <style></style>
+      <type>org.apache.nifi.processors.twitter.GetTwitter</type>
+    </processors>
+  </snippet>
+  <timestamp>01/30/2017 22:06:40 UTC</timestamp>
+</template>
