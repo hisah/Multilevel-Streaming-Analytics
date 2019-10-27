@@ -19,10 +19,16 @@ The objective of this workshop was to provide a forum for researchers and indust
 URL: https://dl.acm.org/citation.cfm?id=3291356
 ### Talks
 The following are talks that we presented as a result of this project:
-#### Spot and Stop Fake News: Using Deep Learning to Predict the Veracity of News Streams. SOSCIP 3 Minute Impact Competition, Advance Ontario, May 15th-16th, 2019.
-#### A Multilevel Streaming Data Analytics Infrastructure for Predictive Analytics. Technology Expo, CASCON ‘18, October 30th, 2018.
-#### BAM-Lab/Gnowit Collaboration, Impact, and Success Stories. Queens Post-Doc Research Showcase & Reception, September 20th, 2018.
-#### A Multilevel Streaming Data Analytics Infrastructure for Predictive Analytics. SOSCIP Postdoctoral Fellows Lightning Round Competition, OARCC'18, May 16th, 2018.
+#### Advance Ontario 2019
+Spot and Stop Fake News: Using Deep Learning to Predict the Veracity of News Streams. SOSCIP 3 Minute Impact Competition, Advance Ontario, May 15th-16th, 2019.
+#### CASCON Expo 2018
+A Multilevel Streaming Data Analytics Infrastructure for Predictive Analytics. Technology Expo, CASCON ‘18, October 30th, 2018.
+#### Queens Post-Doc Research Showcase 2018
+BAM-Lab/Gnowit Collaboration, Impact, and Success Stories. Queens Post-Doc Research Showcase & Reception, September 20th, 2018.
+#### OARCC 2018
+A Multilevel Streaming Data Analytics Infrastructure for Predictive Analytics. SOSCIP Postdoctoral Fellows Lightning Round Competition, OARCC'18, May 16th, 2018.
 ### Spotlights
+#### Impact report
 This project was featured in the June 2018 SOSCIP newsletter https://www.soscip.org/wp-content/uploads/2017/08/soscip_impactreport2018_pages.pdf 
+#### Researcher spotlight
 The postdoctoral fellow was interviewed and featured in the SOSCIP researcher showcase for September 2018 SOSCIP newsletter https://www.soscip.org/stories/researcher-spotlight-making-the-connection
