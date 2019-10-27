@@ -9,10 +9,20 @@ An essential part of building a data-driven organization is the ability to handl
 ## Data stream analytics
 The rapid growth of data in velocity, volume, value, variety, and veracity has enabled exciting new opportunities and presented big challenges for businesses of all types. Recently, there has been considerable interest in developing systems for processing continuous data streams with the increasing need for real-time analytics for decision support in the business, healthcare, manufacturing, and security. The analytics of streaming data usually relies on the output of offline analytics on static or archived data. However, businesses and organizations like our industry partner Gnowit, strive to provide their customers with real time market information and continuously look for a unified analytics framework that can integrate both streaming and offline analytics in a seamless fashion to extract knowledge from large volumes of hybrid streaming data. Here, as part of this project, we present our study on designing a multilevel streaming text data analytics framework by comparing leading edge scalable open-source, distributed, and in-memory technologies. We demonstrate the functionality of the framework for a use case of multilevel text analytics using deep learning for language understanding and sentiment analysis including data indexing and query processing. Our framework combines Spark streaming for real time text processing, the Long Short Term Memory (LSTM) deep learning model for higher level sentiment analysis, and other tools for SQL-based analytical processing to provide a scalable solution for multilevel streaming text analytics. The outcome of this study was presented during the 2019 IEEE COMPSAC conference at Milwaukee, Wisconsin, USA. Paper: A Scalable Framework for Multilevel Streaming Data Analytics using Deep Learning. URL:https://ieeexplore.ieee.org/abstract/document/8754149
 ## Other activities/outcomes related to this project
-The following are the workshops that we hosted as a result of this project:
-### A Hands-on Tutorial on Deep Learning for Object and Pattern Recognition @CASCON 2019, November 4-6, 2019, Markham Canada. 
+### Workshops
+The following are workshops that we hosted as a result of this project:
+#### A Hands-on Tutorial on Deep Learning for Object and Pattern Recognition @CASCON 2019, November 4-6, 2019, Markham Canada. 
 The objective of this workshop is to provide an introduction to fundamental concepts of deep learning algorithms and hands-on tutorials to aspiring data scientists, researchers, industry practitioners, and deep learning enthusiasts looking to build or integrate the power of deep learning in their business applications.
 URL: https://pheedloop.com/cascon/site/sessions/?id=LLGFyZ 
-### Large-Scale Multilevel Streaming Data Analytics @CASCON 2018, October 29 - 31, 2018, Markham, Canada. 
+#### Large-Scale Multilevel Streaming Data Analytics @CASCON 2018, October 29 - 31, 2018, Markham, Canada. 
 The objective of this workshop was to provide a forum for researchers and industry practitioners to discuss new ideas and share their experiences in the areas of streaming data analytics. Participants presented their work on topics including methods, models, algorithms, infrastructures, quality issues, applications, and open problems for largescale streaming data analytics.
 URL: https://dl.acm.org/citation.cfm?id=3291356
+### Talks
+The following are talks that we presented as a result of this project:
+#### Spot and Stop Fake News: Using Deep Learning to Predict the Veracity of News Streams. SOSCIP 3 Minute Impact Competition, Advance Ontario, May 15th-16th, 2019.
+#### A Multilevel Streaming Data Analytics Infrastructure for Predictive Analytics. Technology Expo, CASCON ‘18, October 30th, 2018.
+#### BAM-Lab/Gnowit Collaboration, Impact, and Success Stories. Queens Post-Doc Research Showcase & Reception, September 20th, 2018.
+#### A Multilevel Streaming Data Analytics Infrastructure for Predictive Analytics. SOSCIP Postdoctoral Fellows Lightning Round Competition, OARCC'18, May 16th, 2018.
+### Spotlights
+This project was featured in the June 2018 SOSCIP newsletter https://www.soscip.org/wp-content/uploads/2017/08/soscip_impactreport2018_pages.pdf 
+The postdoctoral fellow was interviewed and featured in the SOSCIP researcher showcase for September 2018 SOSCIP newsletter https://www.soscip.org/stories/researcher-spotlight-making-the-connection
