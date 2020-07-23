@@ -13,7 +13,7 @@ The rapid growth of data in velocity, volume, value, variety, and veracity has e
 The following are workshops that we hosted as a result of this project:
 #### A Hands-on Tutorial on Deep Learning for Object and Pattern Recognition @CASCON 2019, November 4-6, 2019, Markham Canada. 
 The objective of this workshop is to provide an introduction to fundamental concepts of deep learning algorithms and hands-on tutorials to aspiring data scientists, researchers, industry practitioners, and deep learning enthusiasts looking to build or integrate the power of deep learning in their business applications.
-URL: https://pheedloop.com/cascon/site/sessions/?id=LLGFyZ 
+URL: https://dl.acm.org/doi/abs/10.5555/3370272.3370331 
 #### Large-Scale Multilevel Streaming Data Analytics @CASCON 2018, October 29 - 31, 2018, Markham, Canada. 
 The objective of this workshop was to provide a forum for researchers and industry practitioners to discuss new ideas and share their experiences in the areas of streaming data analytics. Participants presented their work on topics including methods, models, algorithms, infrastructures, quality issues, applications, and open problems for largescale streaming data analytics.
 URL: https://dl.acm.org/citation.cfm?id=3291356
