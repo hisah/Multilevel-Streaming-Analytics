@@ -16,7 +16,7 @@ The objective of this workshop is to provide an introduction to fundamental conc
 URL: https://dl.acm.org/doi/abs/10.5555/3370272.3370331 
 #### Large-Scale Multilevel Streaming Data Analytics @CASCON 2018, October 29 - 31, 2018, Markham, Canada. 
 The objective of this workshop was to provide a forum for researchers and industry practitioners to discuss new ideas and share their experiences in the areas of streaming data analytics. Participants presented their work on topics including methods, models, algorithms, infrastructures, quality issues, applications, and open problems for largescale streaming data analytics.
-URL: https://dl.acm.org/citation.cfm?id=3291356
+URL: https://dl.acm.org/doi/abs/10.5555/3291291.3291356 
 ### Talks
 The following are talks that we presented as a result of this project:
 #### Advance Ontario 2019
